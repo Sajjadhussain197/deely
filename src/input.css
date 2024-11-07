@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .custom-bg {
+        background-image: url('../public/obj.png');
+        background-size: 350px 370px;
+        margin-right: -200px !important;
+    }
+    @media (max-width: 768px) {
+        .custom-bg {
+            background-size: 310px 290px;
+        }
+    }
+}
