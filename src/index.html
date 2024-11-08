@@ -917,13 +917,11 @@
     
                     // Add markers to the map
                     features.forEach(feature => {
-                        new google.maps.Marker({
+                        const marker = new google.maps.Marker({
                             position: feature.position,
-                            map: map,
+                            map: map, // Ensure 'map' is a valid google.maps.Map instance
                             title: feature.title,
-                            icon: './public/location.svg' 
-                            
-               
+                            icon: './public/location.svg',
                         });
                     });
     
